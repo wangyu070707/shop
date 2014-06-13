@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../HelloLucene/lib/lucene-core-3.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HelloLucene/lib/junit-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HelloLucene/lib/poi-3.6-20091214.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../HelloLucene/lib/jxl-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

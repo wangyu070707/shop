@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Lucene/02_lucene_searcher/lib/lucene-core-3.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lucene/02_lucene_searcher/lib/commons-io-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Lucene/02_lucene_searcher/lib/junit-4.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

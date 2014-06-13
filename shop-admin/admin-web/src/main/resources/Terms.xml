@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!--
+		terms : the system's term defines.<br> category: 分类<br> term: 字典术语<br>
+		id:<br> name:<br> hiddenValue:<br> displayValue:<br>
+		
+	-->
+	
+<terms>
+<!-- 广告排序类型 -->
+	<category id="merchantType">
+		<term id="1" name="已入驻商户" hiddenValue="1" displayValue="已入驻商户" />
+		<term id="2" name="未入驻商户" hiddenValue="2" displayValue="已入驻商户" />
+	</category>
+<!-- 新年度协议目录 -->
+	<category id="yearCatalog">
+		<term id="2007" name="2007" hiddenValue="2007" displayValue="2007" />
+		<term id="2008" name="2008" hiddenValue="2008" displayValue="2008" />
+		<term id="2009" name="2009" hiddenValue="2009" displayValue="2009" />
+		<term id="2010" name="2010" hiddenValue="2010" displayValue="2010" />
+		<term id="2011" name="2011" hiddenValue="2011" displayValue="2011" />
+	</category>
+<!-- 信息发送类型 -->
+	<category id="messageSendType">
+		<term id="PTS" name="短信平台发送" hiddenValue="PTS" displayValue="短信平台发送" />
+		<term id="XYOS" name="协议订单发送" hiddenValue="XYOS" displayValue="协议订单发送" />
+	</category>
+<!--协议目录当前是否使用 -->
+	<category id="XyCatalogIsUsed">
+		<term id="1" name="是" hiddenValue="1" displayValue="是" />
+		<term id="0" name="否" hiddenValue="0" displayValue="否" />
+	</category>
+<!-- 产品的状态 -->
+	<category id="productStatus">
+		<term id="1" name="上架" hiddenValue="1" displayValue="上架" />
+		<term id="0" name="下架" hiddenValue="0" displayValue="下架" />
+	</category>
+<!-- 产品图片类型-->
+	<category id="picType">
+		<term id="1" name="产品预览图" hiddenValue="1" displayValue="产品预览图" />
+		<term id="2" name="产品大图" hiddenValue="2" displayValue="产品大图" />
+	</category>
+<!-- 短信系统数据 -->
+	<category id="SystemNumber">
+		<term id="1" name="${收件人姓名}" hiddenValue="1" displayValue="${收件人姓名}" />
+		<term id="2" name="${发件人姓名}" hiddenValue="2" displayValue="${发件人姓名}" />
+		<term id="3" name="${发件人部门}" hiddenValue="3" displayValue="${发件人部门}" />
+		<term id="4" name="${系统日期}" hiddenValue="4" displayValue="${系统日期}" />
+		<term id="5" name="${消息内容}" hiddenValue="5" displayValue="${消息内容}" />
+	</category>
+	
+	<!-- 证件类型 -->
+	<category id="IdType">
+		<term id="1" name="身份证" hiddenValue="1" displayValue="身份证" />
+		<term id="2" name="军官证" hiddenValue="2" displayValue="军官证" />
+		<term id="3" name="文职干部证" hiddenValue="3" displayValue="文职干部证" />
+		<term id="4" name="其他" hiddenValue="4" displayValue="其他" />
+	</category>
+	<!-- 广告类型 -->
+	<category id="adType">
+		<term id="1" name="首页大广告" hiddenValue="1" displayValue="760 × 300" />
+		<term id="2" name="首页小广告" hiddenValue="2" displayValue="201 × 100" />
+		<term id="3" name="搜索页广告" hiddenValue="3" displayValue="201 × 100" />
+		<term id="4" name="产品详细页广告" hiddenValue="4" displayValue="201 × 100" />
+	</category>
+	<!-- 广告状态 -->
+	<category id="adStatus">
+		<term id="0" name="未发布" hiddenValue="0" displayValue="未发布" />
+		<term id="1" name="已发布" hiddenValue="1" displayValue="已发布" />
+	</category>
+	<!-- 广告排序类型 -->
+	<category id="adSeq">
+		<term id="2" name="升序" hiddenValue="2" displayValue="升序" />
+		<term id="1" name="降序" hiddenValue="1" displayValue="降序" />
+	</category>
+	<!-- Education_Background_Type 教育程度-->
+	<category id="EducationBackground">
+		<term id="1" name="研究生" hiddenValue="1" displayValue="研究生" />
+		<term id="2" name="大学本科" hiddenValue="2" displayValue="大学本科" />
+		<term id="3" name="大学专科及以下" hiddenValue="3" displayValue="大学专科及以下" />
+	</category>
+
+	<!-- 婚姻状况-->
+	<category id="Maritalstatus">
+		<term id="1" name="保密" hiddenValue="1" displayValue="保密" />
+		<term id="2" name="未婚" hiddenValue="2" displayValue="未婚" />
+		<term id="3" name="已婚" hiddenValue="3" displayValue="已婚" />
+		<term id="4" name="离异" hiddenValue="4" displayValue="离异" />
+	</category>
+	<!-- 职称-->
+	<category id="LongevityType">
+		<term id="2" name="中级" hiddenValue="2" displayValue="中级" />
+		<term id="3" name="高级" hiddenValue="3" displayValue="高级" />
+	</category>
+
+	<!-- 消息状态 -->
+	<category id="MessageStatus">
+		<term id="1" name="已阅读" hiddenValue="1" displayValue="已阅读" />
+		<term id="0" name="未阅读" hiddenValue="0" displayValue="未阅读" />
+	</category>
+	<!-- Sex -->
+	<category id="Sex">
+		<term id="男" name="男" hiddenValue="男" displayValue="男" />
+		<term id="女" name="女 " hiddenValue="女" displayValue="女" />
+	</category>
+	<!-- 企业规模 -->
+	<category id="EnterpriseSize">
+		<term id="50" name="1-49" hiddenValue="50" displayValue="1-49" />
+		<term id="100" name="50-99" hiddenValue="100" displayValue="50-99" />
+		<term id="500" name="100-499" hiddenValue="500" displayValue="100-499" />
+		<term id="1000" name="500-999" hiddenValue="1000" displayValue="500-999" />
+		<term id="1001" name="1000人以上" hiddenValue="1001" displayValue="1000人以上" />
+	</category>
+	<!-- 经济性质  -->
+	<category id="EnterpriseType">
+		<term id="1" name="国有独资公司" hiddenValue="1" displayValue="国有独资公司" description="" />
+		<term id="2" name="国有控股公司" hiddenValue="2" displayValue="国有控股公司" description="" />
+		<term id="3" name="股份有限公司" hiddenValue="3" displayValue="股份有限公司" description="" />
+		<term id="4" name="有限责任公司" hiddenValue="4" displayValue="有限责任公司" description="" />
+		<term id="5" name="合伙企业" hiddenValue="5" displayValue="合伙企业" description="" />
+		<term id="6" name="个人独资企业" hiddenValue="6" displayValue="个人独资企业" description="" />
+		<term id="7" name="港澳台合资企业" hiddenValue="7" displayValue="港澳台合资企业" description="" />
+		<term id="8" name="中外合资（作）企业" hiddenValue="8" displayValue="中外合资（作）企业" description="" />
+		<term id="9" name="国有及国有控股企业" hiddenValue="9" displayValue="国有及国有控股企业" description="" />
+		<term id="10" name="集体企业" hiddenValue="10" displayValue="集体企业" description="" />
+		<term id="11" name="私营企业" hiddenValue="11" displayValue="私营企业" description="" />
+		<term id="12" name="港澳台合资（作）企业" hiddenValue="12" displayValue="港澳台合资（作）企业" description="" />
+	</category>
+	
+	<category id="EnterpriseType1">
+		<term id="9" name="国有及国有控股企业" hiddenValue="9" displayValue="国有及国有控股企业" description="" />
+		<term id="10" name="集体企业" hiddenValue="10" displayValue="集体企业" description="" />
+		<term id="3" name="股份有限公司" hiddenValue="3" displayValue="股份有限公司" description="" />
+		<term id="4" name="有限责任公司" hiddenValue="4" displayValue="有限责任公司" description="" />
+		<term id="11" name="私营企业" hiddenValue="11" displayValue="私营企业" description="" />
+		<term id="12" name="港澳台合资（作）企业" hiddenValue="12" displayValue="港澳台合资（作）企业" description="" />
+		<term id="8" name="中外合资（作）企业" hiddenValue="8" displayValue="中外合资（作）企业" description="" />
+	</category>
+
+	<!-- 民族  -->
+	<category id="NationalityType_zh-cn">
+		<term id="1" name="汉族" hiddenValue="1" displayValue="汉族" description="1%" />
+		<term id="2" name="壮族" hiddenValue="2" displayValue="壮族" description="8%" />
+		<term id="3" name="满族" hiddenValue="3" displayValue="满族" description="11%" />
+		<term id="4" name="回族" hiddenValue="4" displayValue="回族" description="3%" />
+		<term id="5" name="苗族" hiddenValue="5" displayValue="苗族" description="6%" />
+		<term id="6" name="维吾尔族" hiddenValue="6" displayValue="维吾尔族" description="5%" />
+		<term id="7" name="土家族" hiddenValue="7" displayValue="土家族" description="15%" />
+		<term id="8" name="彝族" hiddenValue="8" displayValue="彝族" description="7%" />
+		<term id="9" name="蒙古族" hiddenValue="9" displayValue="蒙古族" description="2%" />
+		<term id="10" name="藏族" hiddenValue="10" displayValue="藏族" description="4%" />
+		<term id="11" name="布依族" hiddenValue="11" displayValue="布依族" description="9%" />
+		<term id="12" name="侗族" hiddenValue="12" displayValue="侗族" description="12%" />
+		<term id="13" name="瑶族" hiddenValue="13" displayValue="瑶族" description="13%" />
+		<term id="14" name="朝鲜族" hiddenValue="14" displayValue="朝鲜族" description="10%" />
+		<term id="58" name="其它民族" hiddenValue="58" displayValue="其它民族" description="" />
+	</category>
+	
+	<!-- 籍贯  -->
+	<category id="PlaceOfBirthType">
+		<term id="1" name="北京市" hiddenValue="BJ" displayValue="北京市" description="1%" />
+		<term id="2" name="天津市" hiddenValue="TJ" displayValue="天津市" description="2%" />
+		<term id="3" name="上海市" hiddenValue="SH" displayValue="上海市" description="3%" />
+		<term id="4" name="重庆市" hiddenValue="CQ" displayValue="重庆市" description="4%" />
+		<term id="5" name="河北省" hiddenValue="HE" displayValue="河北省" description="5%" />
+		<term id="6" name="河南省" hiddenValue="HA" displayValue="河南省" description="6%" />
+		<term id="7" name="云南省" hiddenValue="YN" displayValue="云南省" description="7%" />
+		<term id="8" name="辽宁省" hiddenValue="LL" displayValue="辽宁省" description="8%" />
+		<term id="9" name="黑龙江省" hiddenValue="HL" displayValue="黑龙江省" description="9%" />
+		<term id="10" name="湖南省" hiddenValue="HN" displayValue="湖南省" description="10%" />
+		<term id="11" name="安徽省" hiddenValue="AH" displayValue="安徽省" description="11%" />
+		<term id="12" name="山东省" hiddenValue="SD" displayValue="山东省" description="12%" />
+		<term id="13" name="新疆维吾尔" hiddenValue="XJ" displayValue="新疆维吾尔" description="13%" />
+		<term id="14" name="江苏省" hiddenValue="JS" displayValue="江苏省" description="14%" />
+		<term id="15" name="浙江省" hiddenValue="ZJ" displayValue="浙江省" description="15%" />
+		<term id="16" name="江西省" hiddenValue="JX" displayValue="江西省" description="16%" />
+		<term id="17" name="湖北省" hiddenValue="HB" displayValue="湖北省" description="17%" />
+		<term id="18" name="广西壮族" hiddenValue="GX" displayValue="广西壮族" description="18%" />
+		<term id="19" name="甘肃省" hiddenValue="GS" displayValue="甘肃省" description="19%" />
+		<term id="20" name="山西省" hiddenValue="SX" displayValue="山西省" description="" />
+		<term id="21" name="内蒙古" hiddenValue="NM" displayValue="内蒙古" description="" />
+		<term id="22" name="陕西省" hiddenValue="SN" displayValue="陕西省" description="" />
+		<term id="23" name="吉林省" hiddenValue="JL" displayValue="吉林省" description="" />
+		<term id="24" name="福建省" hiddenValue="FJ" displayValue="福建省" description="" />
+		<term id="25" name="贵州省" hiddenValue="GZ" displayValue="贵州省" description="" />
+		<term id="26" name="广东省" hiddenValue="GD" displayValue="广东省" description="" />
+		<term id="27" name="青海省" hiddenValue="QH" displayValue="青海省" description="" />
+		<term id="28" name="西藏" hiddenValue="XZ" displayValue="西藏" description="" />
+		<term id="29" name="四川省" hiddenValue="SC" displayValue="四川省" description="" />
+		<term id="30" name="宁夏回族" hiddenValue="NX" displayValue="宁夏回族" description="" />
+		<term id="31" name="海南省" hiddenValue="HI" displayValue="海南省" description="" />
+		<term id="32" name="台湾省" hiddenValue="TW" displayValue="台湾省" description="" />
+		<term id="33" name="香港特别行政区 " hiddenValue="HK" displayValue="香港特别行政区 " description="" />
+		<term id="34" name="澳门特别行政区" hiddenValue="MO" displayValue="澳门特别行政区" description="" />
+	</category>
+	
+	<!-- 通用状态 -->
+	<category id="status">
+		<term id="1" name="有效" hiddenValue="1" displayValue="有效" />
+		<term id="0" name="无效" hiddenValue="0" displayValue="无效" />
+	</category>
+	
+	<!-- 订单备注 -->
+	<category id="orderRemark">
+		<term id="1" name="请在送货前联系我" hiddenValue="1" displayValue="请在送货前联系我" />
+		<term id="2" name="请在工作日内送货" hiddenValue="2" displayValue="请在工作日内送货" />
+		<term id="3" name="请在非工作日送货" hiddenValue="3" displayValue="请在非工作日送货" />
+		<term id="9" name="其他" hiddenValue="9" displayValue="其他" />
+	</category>
+</terms>

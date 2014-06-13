@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <classPathEntry location="D:/mysql-connector-java-5.1.26.jar" />
+
+  <context id="open" targetRuntime="MyBatis3">
+  <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+<!--   <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" /> -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+
+        connectionURL="jdbc:mysql://localhost:3306/product?characterEncoding=utf-8"
+        userId="root"
+        password="root">
+    </jdbcConnection>
+    
+  <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="com.mission.shop.product.dao.model" targetProject="product-dao/src/main/java">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+<!--              <property  name="rootClass" value="com.allinpay.base.holder.BaseHolder"/> -->
+      
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="com.mission.shop.product.dao.mapper"  targetProject="product-dao/src/main/resources">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER"  targetPackage="com.mission.shop.product.dao.mapper"  targetProject="product-dao/src/main/java">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+     <table schema=""   tableName="attribute" domainObjectName="">
+           <generatedKey column="atrr_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="brand" domainObjectName="">
+           <generatedKey column="brand_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="category" domainObjectName="">
+           <generatedKey column="cat_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="pic_url" domainObjectName="">
+           <generatedKey column="id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="goods" domainObjectName="">
+           <generatedKey column="goods_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product" domainObjectName="">
+           <generatedKey column="product_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product_attr" domainObjectName="">
+           <generatedKey column="id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product_cat" domainObjectName="">
+           <generatedKey column="id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product_coment" domainObjectName="">
+           <generatedKey column="id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product_detail" domainObjectName="">
+           <generatedKey column="detail_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="product_kind" domainObjectName="">
+           <generatedKey column="kind_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="spec_attr" domainObjectName="">
+           <generatedKey column="spec_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+    
+  </context>
+</generatorConfiguration>
