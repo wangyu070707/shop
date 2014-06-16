@@ -22,9 +22,9 @@
 		</property>
 	</bean>
 
-	<task:annotation-driven/>
 	<context:annotation-config />
 	<context:component-scan base-package="com.mission.shop.admin.service" />
+	<context:component-scan base-package="com.mission.shop.product.controller" />
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
 

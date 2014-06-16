@@ -11,4 +11,28 @@
 	<artifactId>shop-user</artifactId>
 	<name>shop-user</name>
 	<packaging>pom</packaging>
+	<modules>
+		<module>user-dao</module>
+		<module>user-service</module>
+		<module>user-service-impl</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>user-dao</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>user-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>user-service-impl</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

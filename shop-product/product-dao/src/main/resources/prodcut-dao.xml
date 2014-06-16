@@ -37,11 +37,11 @@
 		<property name="dataSource" ref="product-dataSource" />
 		<property name="configLocation" value="classpath:product-mybatis-config.xml" />
 		<property name="mapperLocations"
-			value="classpath:com/qianbao/product/dao/mapper/*.xml" />
+			value="classpath:com/mission/shop/product/dao/mapper/*.xml" />
 	</bean>
 
 	<bean id="product-mapper-scanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.qianbao.product.dao.mapper" />
+		<property name="basePackage" value="com.mission.shop.product.dao.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="product-sqlSessionFactory" />
 	</bean>
 

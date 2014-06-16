@@ -6,12 +6,12 @@
 <generatorConfiguration>
   <classPathEntry location="D:/mysql-connector-java-5.1.26.jar" />
 
-  <context id="open" targetRuntime="MyBatis3">
+  <context id="shop" targetRuntime="MyBatis3">
   <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
 <!--   <plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" /> -->
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
 
-        connectionURL="jdbc:mysql://localhost:3306/product?characterEncoding=utf-8"
+        connectionURL="jdbc:mysql://localhost:3306/shop?characterEncoding=utf-8"
         userId="root"
         password="root">
     </jdbcConnection>
@@ -70,6 +70,9 @@
     </table>
      <table schema=""   tableName="spec_attr" domainObjectName="">
            <generatedKey column="spec_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
+    </table>
+     <table schema=""   tableName="shop" domainObjectName="">
+           <generatedKey column="shop_id"  sqlStatement="SELECT LAST_INSERT_ID()" identity="true" />
     </table>
     
   </context>

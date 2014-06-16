@@ -10,7 +10,6 @@
 
 	<modules>
 		<module>shop-order</module>
-		<module>shop-merchant</module>
 		<module>shop-product</module>
 		<module>shop-admin</module>
 		<module>shop-base</module>
@@ -130,26 +129,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- <dependency> -->
-			<!-- <groupId>com.jscn.common</groupId> -->
-			<!-- <artifactId>commons-core</artifactId> -->
-			<!-- <version>${version.commons-core}</version> -->
-			<!-- </dependency> -->
-			<!-- <dependency> -->
-			<!-- <groupId>com.jscn.common</groupId> -->
-			<!-- <artifactId>commons-sso</artifactId> -->
-			<!-- <version>${version.commons-core}</version> -->
-			<!-- </dependency> -->
-			<dependency>
-				<groupId>com.mission.shop</groupId>
-				<artifactId>base-common</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-			<dependency>
-				<groupId>com.mission.shop</groupId>
-				<artifactId>product-controller</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>

@@ -1,8 +1,8 @@
-package com.mission.shop.product.service.impl.prodcut;
+package com.mission.shop.product.service.impl.product;
 
 import org.springframework.stereotype.Service;
 
-import com.mission.shop.product.service.prodcut.ProductManageService;
+import com.mission.shop.product.service.product.ProductManageService;
 
 @Service
 public class ProductManageServiceImpl implements ProductManageService{

@@ -12,5 +12,10 @@
 			<groupId>com.mission.shop</groupId>
 			<artifactId>product-dao</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.mission.shop</groupId>
+			<artifactId>base-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 </project>
