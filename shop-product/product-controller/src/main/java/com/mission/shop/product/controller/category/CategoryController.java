@@ -2,6 +2,9 @@ package com.mission.shop.product.controller.category;
 
 import java.util.List;
 
+import com.mission.shop.base.common.exception.BusinessException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +20,7 @@ public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
 	
-    private  final Logger     logger = LoggerFactory.getLogger(getClass());
+    private  final Logger logger = LoggerFactory.getLogger(getClass());
 
     
     
@@ -27,14 +30,14 @@ public class CategoryController {
 		try{
 			Category catetory = categoryService.queryTopCategory();
 			List<Category> list = categoryService.queryCategoryByParent(catetory.getCatId());
+            model.addAttribute("catetory",catetory);
+            model.addAttribute("list",list);
 		}catch(BusinessException e){
 			
 			return "common/error";
 		}
 		
-		model.addAttribute("test","test11");
-		model.addAttribute("catetory",catetory);
-		model.addAttribute("test","test11");
+
 		return "category/index";
 	}
 }
