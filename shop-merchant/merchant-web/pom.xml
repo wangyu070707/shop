@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mission.shop</groupId>
+		<artifactId>shop-merchant</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<name>${project.artifactId} v${project.version}</name>
+	<artifactId>merchant-web</artifactId>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>com.mission.shop</groupId>
+			<artifactId>admin-controller</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mission.shop</groupId>
+			<artifactId>merchant-order-controller</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mission.shop</groupId>
+			<artifactId>merchant-product-controller</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>merchant-web</finalName>
+	</build>
+</project>

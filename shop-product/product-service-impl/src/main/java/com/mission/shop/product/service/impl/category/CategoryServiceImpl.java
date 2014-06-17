@@ -26,7 +26,6 @@ public class CategoryServiceImpl implements CategoryService {
 	public Category queryTopCategory() throws BusinessException {
 		CategoryExample example = new CategoryExample();
 		example.createCriteria().andLevelEqualTo(0).andStatusEqualTo(1000);
-		example.setOrderByClause(" order by sort_order ");
 		List<Category> list = categoryMapper.selectByExample(example);
 		if(list.isEmpty()){
 			throw new BusinessException("顶层商品分类为空");
@@ -42,7 +41,7 @@ public class CategoryServiceImpl implements CategoryService {
 		CategoryExample example = new CategoryExample();
 		example.createCriteria().andParentIdEqualTo(parentId)
 		.andStatusEqualTo(1000);
-		example.setOrderByClause(" order by sort_order ");
+		example.setOrderByClause(" sort_order ");
 		return categoryMapper.selectByExample(example);
 	}
 

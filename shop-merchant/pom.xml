@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.mission</groupId>
+		<artifactId>shop</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.mission.shop</groupId>
+	<artifactId>shop-merchant</artifactId>
+	<name>shop-merchant</name>
+	<packaging>pom</packaging>
+
+	<dependencyManagement>
+
+		<dependencies>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>merchant-order-controller</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>merchant-product-controller</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+		</dependencies>
+
+
+	</dependencyManagement>
+
+	<modules>
+		<module>merchant-product-controller</module>
+		<module>merchant-order-controller</module>
+		<module>merchant-web</module>
+	</modules>
+</project>
