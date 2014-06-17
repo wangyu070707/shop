@@ -11,4 +11,28 @@
 	<artifactId>shop-order</artifactId>
 	<name>shop-order</name>
 	<packaging>pom</packaging>
+	<modules>
+		<module>order-dao</module>
+		<module>order-service</module>
+		<module>order-service-impl</module>
+	</modules>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>order-dao</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>order-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>order-service-impl</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>
