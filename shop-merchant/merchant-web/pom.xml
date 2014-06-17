@@ -19,14 +19,13 @@
 		</dependency>
 		<dependency>
 			<groupId>com.mission.shop</groupId>
-			<artifactId>merchant-order-controller</artifactId>
+			<artifactId>merchant-controller-order</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.mission.shop</groupId>
-			<artifactId>merchant-product-controller</artifactId>
+			<artifactId>merchant-controller-product</artifactId>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<finalName>merchant-web</finalName>
 	</build>

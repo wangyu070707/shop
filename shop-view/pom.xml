@@ -8,30 +8,33 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.mission.shop</groupId>
-	<artifactId>shop-merchant</artifactId>
-	<name>shop-merchant</name>
+	<artifactId>shop-view</artifactId>
+	<name>shop-view</name>
 	<packaging>pom</packaging>
+	<modules>
+		<module>view-controller-product</module>
+		<module>view-controller-order</module>
+		<module>view-controller-user</module>
+		<module>view-web</module>
+	</modules>
 
 	<dependencyManagement>
-
 		<dependencies>
 			<dependency>
 				<groupId>com.mission.shop</groupId>
-				<artifactId>merchant-controller-order</artifactId>
+				<artifactId>view-controller-order</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.mission.shop</groupId>
-				<artifactId>merchant-controller-product</artifactId>
+				<artifactId>view-controller-product</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mission.shop</groupId>
+				<artifactId>view-controller-user</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
-
 	</dependencyManagement>
-
-	<modules>
-		<module>merchant-controller-product</module>
-		<module>merchant-controller-order</module>
-		<module>merchant-web</module>
-	</modules>
 </project>
