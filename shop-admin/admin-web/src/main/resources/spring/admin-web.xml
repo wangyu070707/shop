@@ -22,7 +22,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.mission.shop.admin.service" />
 
-    <!--<import resource="classpath:product-controller.xml" />-->
+    <import resource="classpath:product-controller.xml" />
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
@@ -52,8 +52,9 @@
 		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml" />
 	</bean>
 
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+	<bean id="admin-mapper-scanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.mission.shop.admin.dao.mapper" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 
 
