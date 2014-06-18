@@ -16,7 +16,12 @@
         <dependency>
             <groupId>com.mission.shop</groupId>
             <artifactId>base-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
+        <dependency>
+			<groupId>com.mission.shop</groupId>
+			<artifactId>user-service-impl</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 </project>

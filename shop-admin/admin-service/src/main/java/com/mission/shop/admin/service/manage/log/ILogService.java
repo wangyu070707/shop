@@ -7,7 +7,7 @@ import com.mission.shop.admin.utils.persistent.ResultList;
 
 public interface ILogService {
 
-	public static final String SERVICE_NAME = "com/jscn/pay/service/manage/log/ILogService";
+	public static final String SERVICE_NAME = "com/mission/shop/admin/service/manage/log/ILogService";
 
 	public void addLog(LogEntity log) throws ServiceException;
 

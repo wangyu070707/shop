@@ -10,7 +10,7 @@
   <dependencies>
 		<dependency>
 			<groupId>com.mission.shop</groupId>
-			<artifactId>user-service-impl</artifactId>
+			<artifactId>product-service-impl</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>

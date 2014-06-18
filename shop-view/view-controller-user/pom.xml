@@ -14,5 +14,16 @@
 			<artifactId>user-service-impl</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-	</dependencies>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
 </project>

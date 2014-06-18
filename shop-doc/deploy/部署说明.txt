@@ -1,0 +1,5 @@
+本地新建mysql库 shop
+执行以上sql， 商城最新sql，可以用shop-doc/design/shop.pdm 生成
+
+配置（商户后台） shop-merchant/merchant-web/src/main/resources/config/database.properties 中数据库的用户名密码
+即可运行商户后台

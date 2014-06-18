@@ -282,6 +282,3 @@ values ('beb0c823c8184b9abf12b193cf27a4ee', 'SZMX', 'ROLE_ADMIN');
 insert into SYS_MENU_ROLE (id, menu_code, role_code)
 values ('053fa39d74bc405aa9bd083d99ea17d9', 'ZFJL', 'ROLE_ADMIN');
 commit;
-
-## 前端http://localhost:8081/fuwu58-web/
-## 后台http://localhost:8081/fuwu58-web-sysadmin/
